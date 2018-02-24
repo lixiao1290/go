@@ -3,9 +3,6 @@ package main
 import (
 	"fmt"
 	"time"
-
-	"github.com/go-vgo/robotgo"
-	"sourcegraph.com/sourcegraph/go-selenium"
 )
 
 func main() {
@@ -25,7 +22,7 @@ func main() {
 	}
 
 	robotgo.MoveMouseSmooth(323, 186) //移动鼠标
-	robotgo.MouseClick("left", true) //单击
+	robotgo.MouseClick("left", true)  //单击
 	time.Sleep(time.Second * 5)
 	robotgo.MoveMouseSmooth(422, 412)
 	robotgo.MouseClick("left", true)
